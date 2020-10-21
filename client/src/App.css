@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&display=swap");
+body {
+  background: #ececff;
+  padding-top: 4vh;
+}
+
 body h1, body h2, body h3, body h4, body h5, body h5 {
   font-family: "Barlow";
+  margin-bottom: -4.5vh;
 }
 
 body th:nth-child(2), body td:nth-child(2) {
@@ -11,11 +17,13 @@ body table {
   margin-top: 5vh;
   margin-bottom: 5vh;
   border-collapse: separate;
-  border-spacing: 0px 10px;
+  border-spacing: 0px 18px;
 }
 
 body table thead tr {
-  border: 10px solid transparent;
+  -webkit-box-shadow: 4px 4px 12px #acacac;
+          box-shadow: 4px 4px 12px #acacac;
+  border-radius: 16px;
 }
 
 body table thead tr:nth-child(1) {
@@ -24,22 +32,29 @@ body table thead tr:nth-child(1) {
   font-size: 16px;
 }
 
-body table thead tr:nth-child(1) th:first-child {
+body table thead tr th:first-child {
   padding: 26px 42px;
   border-radius: 16px 0px 0px 16px;
 }
 
-body table thead tr:nth-child(1) th:last-child {
+body table thead tr th:last-child {
   padding: 26px 42px;
   border-radius: 0px 16px 16px 0px;
 }
 
+body table thead tr th:hover {
+  background: inherit;
+  color: inherit;
+}
+
 body table tbody tr {
-  border: 10px solid #1e1e1e;
+  -webkit-box-shadow: 2px 2px 12px #acacac, -2px -2px 12px #ffffff;
+          box-shadow: 2px 2px 12px #acacac, -2px -2px 12px #ffffff;
+  border-radius: 16px;
 }
 
 body table tbody tr:nth-child(even), body table tbody tr:nth-child(odd) {
-  background: #f9f9f9;
+  background: #fcfcfc;
 }
 
 body table tbody tr:nth-child(1) {
@@ -62,6 +77,8 @@ body table tbody tr:nth-child(3) {
 
 body table tbody tr:hover {
   opacity: 0.8;
+  -webkit-box-shadow: 5px 5px 12px #acacac, -5px -5px 12px #ffffff;
+          box-shadow: 5px 5px 12px #acacac, -5px -5px 12px #ffffff;
 }
 
 body table tbody tr td:first-child {
@@ -77,5 +94,10 @@ body table tbody tr td:last-child {
 body table tbody tr td:hover {
   background: inherit;
   color: inherit;
+}
+
+* {
+  -webkit-transition: 300ms;
+  transition: 300ms;
 }
 /*# sourceMappingURL=App.css.map */

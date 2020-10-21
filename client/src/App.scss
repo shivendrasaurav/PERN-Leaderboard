@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
 
 body{
+    background: #ececff;
+    padding-top: 4vh;
+
     h1, h2, h3, h4, h5, h5{
         font-family: "Barlow";
+        margin-bottom: -4.5vh;
     }
 
     th:nth-child(2), td:nth-child(2){
@@ -13,27 +17,31 @@ body{
         margin-top: 5vh;
         margin-bottom: 5vh;
         border-collapse: separate;
-        border-spacing: 0px 10px;
+        border-spacing: 0px 18px;
 
         thead{
 
             tr{
-                border: 10px solid transparent;
+                box-shadow: 4px 4px 12px #acacac;
+                border-radius: 16px;
 
                 &:nth-child(1){
                     background: #1e1e1e;
                     color: #fcfcfc;
                     font-size: 16px;
-
-                    th{
-                        &:first-child{
-                            padding: 26px 42px;
-                            border-radius: 16px 0px 0px 16px;
-                        }
-                        &:last-child{
-                            padding: 26px 42px;
-                            border-radius: 0px 16px 16px 0px;
-                        }
+                }
+                th{
+                    &:first-child{
+                        padding: 26px 42px;
+                        border-radius: 16px 0px 0px 16px;
+                    }
+                    &:last-child{
+                        padding: 26px 42px;
+                        border-radius: 0px 16px 16px 0px;
+                    }
+                    &:hover{
+                        background: inherit;
+                        color: inherit;
                     }
                 }
             }
@@ -42,10 +50,11 @@ body{
         tbody{
 
             tr{
-                border: 10px solid #1e1e1e;
+                box-shadow: 2px 2px 12px #acacac, -2px -2px 12px #ffffff;
+                border-radius: 16px;
 
                 &:nth-child(even), &:nth-child(odd){
-                    background: #f9f9f9;
+                    background: #fcfcfc;
                 }
                 &:nth-child(1){
                     background: #ff8800;
@@ -64,6 +73,7 @@ body{
                 }
                 &:hover{
                     opacity: 0.8;
+                    box-shadow: 5px 5px 12px #acacac, -5px -5px 12px #ffffff;
                 }
 
                 td{
@@ -86,4 +96,9 @@ body{
 
     }
 
+}
+
+
+*{
+    transition: 300ms;
 }

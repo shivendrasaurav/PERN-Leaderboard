@@ -7,7 +7,7 @@ const Home = () =>{
 
                 <h2>Leaderboard</h2>
 
-                <table>
+                <table className="table_container">
                     <thead>
                         <tr>
                             <th class="">Rank</th>  
