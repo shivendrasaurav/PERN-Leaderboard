@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body{
+    h1, h2, h3, h4, h5, h5{
+        font-family: "Barlow";
+    }
+
+    th:nth-child(2){
+        width: 280px;
+    }
+
+    table{
+        width: 90vh;
+        margin: auto;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+
+        thead{
+
+        }
+
+        tbody{
+            
+        }
+    }
+
+}
