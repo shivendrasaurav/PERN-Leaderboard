@@ -9,13 +9,14 @@ const Home = () =>{
 
                 <table>
                     <thead>
-                        <tr className="ranker">
+                        <tr>
                             <th class="">Rank</th>  
                             <th class="">Name</th>
                             <th class="">Questions</th>
                             <th class="">Points</th>
                             <th class="">Average</th>  
                         </tr>  
+                        
                     </thead>  
                     <tbody>  
                         <tr>
@@ -25,6 +26,7 @@ const Home = () =>{
                             <td>102</td>  
                             <td>9.2</td>  
                         </tr>
+                        
                         <tr>  
                             <td>2</td>  
                             <td>John Doe</td>  
@@ -32,6 +34,7 @@ const Home = () =>{
                             <td>92</td>  
                             <td>11.5</td>  
                         </tr>  
+                        
                         <tr>  
                             <td>3</td>  
                             <td>H. S. Butcher</td>  
@@ -39,6 +42,7 @@ const Home = () =>{
                             <td>88</td>  
                             <td>9.7</td>  
                         </tr>  
+                        
                         <tr>
                             <td>4</td>  
                             <td>Hereward Buchanan</td>  
@@ -46,6 +50,7 @@ const Home = () =>{
                             <td>88</td>  
                             <td>8.8</td>  
                         </tr>  
+                        
                         <tr>
                             <td>5</td>  
                             <td>Jane Doe</td>  
@@ -53,6 +58,7 @@ const Home = () =>{
                             <td>88</td>  
                             <td>8.8</td>  
                         </tr>  
+                        
                         <tr>
                             <td>6</td>  
                             <td>Huw Butbot</td>  

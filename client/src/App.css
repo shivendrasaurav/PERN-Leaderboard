@@ -3,14 +3,79 @@ body h1, body h2, body h3, body h4, body h5, body h5 {
   font-family: "Barlow";
 }
 
-body th:nth-child(2) {
-  width: 280px;
+body th:nth-child(2), body td:nth-child(2) {
+  width: 320px;
 }
 
 body table {
-  width: 90vh;
-  margin: auto;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  border-collapse: separate;
+  border-spacing: 0px 10px;
+}
+
+body table thead tr {
+  border: 10px solid transparent;
+}
+
+body table thead tr:nth-child(1) {
+  background: #1e1e1e;
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+body table thead tr:nth-child(1) th:first-child {
+  padding: 26px 42px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+body table thead tr:nth-child(1) th:last-child {
+  padding: 26px 42px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+body table tbody tr {
+  border: 10px solid #1e1e1e;
+}
+
+body table tbody tr:nth-child(even), body table tbody tr:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+body table tbody tr:nth-child(1) {
+  background: #ff8800;
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+body table tbody tr:nth-child(2) {
+  background: #06a5af;
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+body table tbody tr:nth-child(3) {
+  background: #0065af;
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+body table tbody tr:hover {
+  opacity: 0.8;
+}
+
+body table tbody tr td:first-child {
+  padding: 26px 42px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+body table tbody tr td:last-child {
+  padding: 26px 42px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+body table tbody tr td:hover {
+  background: inherit;
+  color: inherit;
 }
 /*# sourceMappingURL=App.css.map */

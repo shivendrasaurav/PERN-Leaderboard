@@ -5,23 +5,85 @@ body{
         font-family: "Barlow";
     }
 
-    th:nth-child(2){
-        width: 280px;
+    th:nth-child(2), td:nth-child(2){
+        width: 320px;
     }
 
     table{
-        width: 90vh;
-        margin: auto;
         margin-top: 5vh;
         margin-bottom: 5vh;
+        border-collapse: separate;
+        border-spacing: 0px 10px;
 
         thead{
 
+            tr{
+                border: 10px solid transparent;
+
+                &:nth-child(1){
+                    background: #1e1e1e;
+                    color: #fcfcfc;
+                    font-size: 16px;
+
+                    th{
+                        &:first-child{
+                            padding: 26px 42px;
+                            border-radius: 16px 0px 0px 16px;
+                        }
+                        &:last-child{
+                            padding: 26px 42px;
+                            border-radius: 0px 16px 16px 0px;
+                        }
+                    }
+                }
+            }
         }
 
         tbody{
-            
+
+            tr{
+                border: 10px solid #1e1e1e;
+
+                &:nth-child(even), &:nth-child(odd){
+                    background: #f9f9f9;
+                }
+                &:nth-child(1){
+                    background: #ff8800;
+                    color: #fcfcfc;
+                    font-size: 16px;
+                }
+                &:nth-child(2){
+                    background: #06a5af;
+                    color: #fcfcfc;
+                    font-size: 16px;
+                }
+                &:nth-child(3){
+                    background: #0065af;
+                    color: #fcfcfc;
+                    font-size: 16px;
+                }
+                &:hover{
+                    opacity: 0.8;
+                }
+
+                td{
+
+                    &:first-child{
+                        padding: 26px 42px;
+                        border-radius: 16px 0px 0px 16px;
+                    }
+                    &:last-child{
+                        padding: 26px 42px;
+                        border-radius: 0px 16px 16px 0px;
+                    }
+                    &:hover{
+                        background: inherit;
+                        color: inherit;
+                    }
+                }
+            }
         }
+
     }
 
 }

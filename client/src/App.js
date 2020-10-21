@@ -9,7 +9,7 @@ import Home from "./components/HomeComp";
 class App extends Component{
   render(){
     return(
-      <div className="page_container">
+      <div className="column large6 medium8 small12 center">
         <Home />
       </div>
     );
