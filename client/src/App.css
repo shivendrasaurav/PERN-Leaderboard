@@ -14,6 +14,7 @@ body th:nth-child(2), body td:nth-child(2) {
 }
 
 body table {
+  padding-left: 16px;
   margin-top: 5vh;
   margin-bottom: 5vh;
   border-collapse: separate;
@@ -33,12 +34,12 @@ body table thead tr:nth-child(1) {
 }
 
 body table thead tr th:first-child {
-  padding: 26px 42px;
+  padding: 26px 36px;
   border-radius: 16px 0px 0px 16px;
 }
 
 body table thead tr th:last-child {
-  padding: 26px 42px;
+  padding: 26px 36px;
   border-radius: 0px 16px 16px 0px;
 }
 
@@ -77,17 +78,17 @@ body table tbody tr:nth-child(3) {
 
 body table tbody tr:hover {
   opacity: 0.8;
-  -webkit-box-shadow: 5px 5px 12px #acacac, -5px -5px 12px #ffffff;
-          box-shadow: 5px 5px 12px #acacac, -5px -5px 12px #ffffff;
+  -webkit-box-shadow: 5px 5px 12px #acacacaa, -5px -5px 12px #ffffff;
+          box-shadow: 5px 5px 12px #acacacaa, -5px -5px 12px #ffffff;
 }
 
 body table tbody tr td:first-child {
-  padding: 26px 42px;
+  padding: 26px 36px;
   border-radius: 16px 0px 0px 16px;
 }
 
 body table tbody tr td:last-child {
-  padding: 26px 42px;
+  padding: 26px 36px;
   border-radius: 0px 16px 16px 0px;
 }
 
@@ -99,5 +100,12 @@ body table tbody tr td:hover {
 * {
   -webkit-transition: 300ms;
   transition: 300ms;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    -webkit-filter: invert(100%) hue-rotate(180deg);
+            filter: invert(100%) hue-rotate(180deg);
+  }
 }
 /*# sourceMappingURL=App.css.map */
