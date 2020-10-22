@@ -6,7 +6,11 @@ const Home = () =>{
     const [SortedData, setSortedData] = useState ([]);
 
     const sortdata = () => {
-        const SortedLBData = LBData.sort(function(a, b){return b.points - a.points});
+        const SortedLBData = LBData.sort(function(a, b){
+            var x = b.points - a.points;
+            var y = b.questions - a.questions;
+            return x-y;
+        });
         setSortedData(SortedLBData);
     }
 

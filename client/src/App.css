@@ -102,10 +102,11 @@ body table tbody tr td:hover {
   transition: 300ms;
 }
 
+/*
 @media (prefers-color-scheme: dark) {
-  :root {
-    -webkit-filter: invert(100%) hue-rotate(180deg);
-            filter: invert(100%) hue-rotate(180deg);
-  }
+    :root{
+        filter: invert(100%) hue-rotate(180deg);
+    }
 }
+*/
 /*# sourceMappingURL=App.css.map */
