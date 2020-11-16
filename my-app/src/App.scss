@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Apex M2";
+    src: url(./apex.otf);
+}
+.primary_inverted{
+    background: #1d1d37;
+    color: #fcfcfc;
+}
+
+body{
+    .horizontal{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;  
+        width: auto;
+        min-height: 300px;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scroll-behavior: auto;
+        align-items: flex-start;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+    
+    .horizontal div{
+        min-width: 40vh;
+        margin: 10px 14px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .horizontal::-webkit-scrollbar{
+        border-radius: 7px;
+        display: block;
+        height: 22px;
+        background: #5e5e5e;
+    }
+    .horizontal::-webkit-scrollbar-thumb {
+        border-radius: 7px;
+        background: #06a5af;
+    }
+
+    h1, h2, h3, h4, h5, h6{
+        font-family: "Apex M2";
+    }
+
+    .event_card{
+        width: 40vh;
+        height: 22.5vh;
+    }
+
+    .pivot_menu{
+        position: fixed;
+        top: 93vh;
+        background: #1d1d57;
+        z-index: 20;
+
+        a{
+            color: #fcfcfcfc;
+        }
+    }
+
+    .sch_event{
+        width: 40vh;
+        height: 22.5vh;
+        background: #0065af;
+        padding: 10px;
+        border-radius: 8px;
+
+        .title{
+            font-size: 2.6vh;
+        }
+        .description{
+            font-family: "Apex M2";
+            padding: 20px 0px;
+        }
+    }
+
+    th:nth-child(2), td:nth-child(2){
+        width: 320px;
+    }
+
+    table{
+        padding-left: 16px;
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        border-collapse: separate;
+        border-spacing: 0px 18px;
+
+        thead{
+
+            tr{
+                border-radius: 16px;
+
+                &:nth-child(1){
+                    background: #1e1e1e;
+                    color: #fcfcfc;
+                    font-size: 16px;
+                }
+                th{
+                    &:first-child{
+                        padding: 26px 36px;
+                        border-radius: 16px 0px 0px 16px;
+                    }
+                    &:last-child{
+                        padding: 26px 36px;
+                        border-radius: 0px 16px 16px 0px;
+                    }
+                    &:hover{
+                        background: inherit;
+                        color: inherit;
+                    }
+                }
+            }
+        }
+
+        tbody{
+
+            tr{
+                border-radius: 16px;
+
+                &:nth-child(even), &:nth-child(odd){
+                    background: #fcfcfc;
+                }
+                &:nth-child(1){
+                    background: #ff8800;
+                    color: #fcfcfc;
+                    font-size: 16px;
+                }
+                &:nth-child(2){
+                    background: #06a5af;
+                    color: #fcfcfc;
+                    font-size: 16px;
+                }
+                &:nth-child(3){
+                    background: #0065af;
+                    color: #fcfcfc;
+                    font-size: 16px;
+                }
+                &:hover{
+                    opacity: 0.8;
+                }
+
+                td{
+                    color: #000;
+
+                    &:first-child{
+                        padding: 26px 36px;
+                        border-radius: 16px 0px 0px 16px;
+                    }
+                    &:last-child{
+                        padding: 26px 36px;
+                        border-radius: 0px 16px 16px 0px;
+                    }
+                    &:hover{
+                        background: inherit;
+                        color: inherit;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+*{
+    transition: 300ms;
+}
+
+.fullheight{
+    min-height: 100vh;
+}
+
+@media (max-width: 480px){
+    .sm-9{
+        width: 100vw;
+    }        
+}
+
+/*
+@media (prefers-color-scheme: dark){
+    :root:not(img){
+        filter: invert(100%) hue-rotate(180deg);
+    }
+}
+*/

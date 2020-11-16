@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "Apex M2";
+  src: url(./apex.otf);
+}
+
+.primary_inverted {
+  background: #1d1d37;
+  color: #fcfcfc;
+}
+
+body .horizontal {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: auto;
+  min-height: 300px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  scroll-behavior: auto;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body .horizontal div {
+  min-width: 40vh;
+  margin: 10px 14px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .horizontal::-webkit-scrollbar {
+  border-radius: 7px;
+  display: block;
+  height: 22px;
+  background: #5e5e5e;
+}
+
+body .horizontal::-webkit-scrollbar-thumb {
+  border-radius: 7px;
+  background: #06a5af;
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-family: "Apex M2";
+}
+
+body .event_card {
+  width: 40vh;
+  height: 22.5vh;
+}
+
+body .pivot_menu {
+  position: fixed;
+  top: 93vh;
+  background: #1d1d57;
+  z-index: 20;
+}
+
+body .pivot_menu a {
+  color: #fcfcfcfc;
+}
+
+body .sch_event {
+  width: 40vh;
+  height: 22.5vh;
+  background: #0065af;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+body .sch_event .title {
+  font-size: 2.6vh;
+}
+
+body .sch_event .description {
+  font-family: "Apex M2";
+  padding: 20px 0px;
+}
+
+body th:nth-child(2), body td:nth-child(2) {
+  width: 320px;
+}
+
+body table {
+  padding-left: 16px;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-collapse: separate;
+  border-spacing: 0px 18px;
+}
+
+body table thead tr {
+  border-radius: 16px;
+}
+
+body table thead tr:nth-child(1) {
+  background: #1e1e1e;
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+body table thead tr th:first-child {
+  padding: 26px 36px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+body table thead tr th:last-child {
+  padding: 26px 36px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+body table thead tr th:hover {
+  background: inherit;
+  color: inherit;
+}
+
+body table tbody tr {
+  border-radius: 16px;
+}
+
+body table tbody tr:nth-child(even), body table tbody tr:nth-child(odd) {
+  background: #fcfcfc;
+}
+
+body table tbody tr:nth-child(1) {
+  background: #ff8800;
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+body table tbody tr:nth-child(2) {
+  background: #06a5af;
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+body table tbody tr:nth-child(3) {
+  background: #0065af;
+  color: #fcfcfc;
+  font-size: 16px;
+}
+
+body table tbody tr:hover {
+  opacity: 0.8;
+}
+
+body table tbody tr td {
+  color: #000;
+}
+
+body table tbody tr td:first-child {
+  padding: 26px 36px;
+  border-radius: 16px 0px 0px 16px;
+}
+
+body table tbody tr td:last-child {
+  padding: 26px 36px;
+  border-radius: 0px 16px 16px 0px;
+}
+
+body table tbody tr td:hover {
+  background: inherit;
+  color: inherit;
+}
+
+* {
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
+.fullheight {
+  min-height: 100vh;
+}
+
+@media (max-width: 480px) {
+  .sm-9 {
+    width: 100vw;
+  }
+}
+
+/*
+@media (prefers-color-scheme: dark){
+    :root:not(img){
+        filter: invert(100%) hue-rotate(180deg);
+    }
+}
+*/
+/*# sourceMappingURL=App.css.map */
